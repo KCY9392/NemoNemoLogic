@@ -8,5 +8,6 @@ public class Run {
 		Player p=new Player("admin");
 		PlaySite ps=new PlaySite(2000,p);
 		
+		System.out.println("네모네모로직");
 	}
 }
