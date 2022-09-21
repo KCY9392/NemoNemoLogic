@@ -1,10 +1,10 @@
-package com.ung.logic.view;
+package com.ung.logic.model.service;
 
 import java.awt.Image;
 
 import javax.swing.ImageIcon;
 
-public class ImageFile {
+public class PlayImageFile {
 	public final ImageIcon fullHeart; 
 	public final ImageIcon BrokenHeart;
 	public final ImageIcon ResetImg;
@@ -27,7 +27,7 @@ public class ImageFile {
  * @param icon : 정사각형 아이콘들의 한변의길이
  * @param button : 버튼 정사각형 한변의 길이
  */
-	public ImageFile(int icon,int button) {
+	public PlayImageFile(int icon, int button) {
 		this.iconSize=icon;
 		this.buttonSize=button;
 		this.BrokenHeart = imageSetSize(new ImageIcon("resources\\image\\icon\\brokenHeart.png"));

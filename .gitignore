@@ -2,3 +2,6 @@
 *.iml
 /out
 /.idea
+.classpath
+*.DS_Store
+.project
