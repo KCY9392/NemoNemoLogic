@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>query.xml</comment>
+<entry key="getQuestionList">SELECT * FROM QUESTIONINFO WHERE QST_ID BETWEEN ? AND ?</entry>
+<entry key="getQuestion">SELECT * FROM QUESTION WHERE QST_CODE=?</entry>
+<entry key="getPlayer">SELECT * FROM PLAYER WHERE PLAYER_ID=?</entry>
+<entry key="createPlayer">INSERT INTO PLAYER (SEQ_PLAYER.NEXTVAL,?,NULL,NULL,NULL)</entry>
+<entry key="SaveClearList">UPDATE PLAYER SET CLEAR_LIST=? WHERE PLAYER_ID=?</entry>
+<entry key="SaveCurrent">UPDATE PLAYER SET CURRENT_QST=?,CURRENT_DATA=? WHERE PLAYER_ID=? </entry>
+</properties>
