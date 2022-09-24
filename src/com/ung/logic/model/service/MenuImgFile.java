@@ -8,7 +8,7 @@ public class MenuImgFile {
     public ImageIcon back;
 
     public MenuImgFile(){
-        this.MainLogo=resizeImg(200,200,new ImageIcon("resources\\image\\logo\\MainLogo.png"));
+        this.MainLogo=resizeImg(200,200,new ImageIcon("resources\\image\\icon\\MainLogo.png"));
         this.back=resizeImg(100,100,new ImageIcon("resources\\image\\icon\\back.png"));
         this.MenuLogo=resizeImg(500,100,new ImageIcon("resources\\image\\icon\\levelLogo.png"));
 

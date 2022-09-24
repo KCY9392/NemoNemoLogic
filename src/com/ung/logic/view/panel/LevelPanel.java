@@ -16,8 +16,8 @@ public class LevelPanel {
     public JButton EasyButton;
     public JButton backButton;
     public JLabel logoLabel;
-    public void levelMenuPanel() {
-        Panel = new JPanel();
+    public LevelPanel() {
+        this.Panel = new JPanel();
         Panel.setForeground(Color.DARK_GRAY);
         Panel.setBackground(new Color(230, 255, 204));
         Panel.setBorder(new EmptyBorder(6, 6, 6, 6));

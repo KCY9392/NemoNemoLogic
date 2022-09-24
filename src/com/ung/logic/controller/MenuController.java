@@ -15,8 +15,8 @@ import java.awt.event.ActionListener;
 
 public class MenuController {
     private MainUi mu;
-    private LevelPanel lp;
-    private startPanel sp;
+    LevelPanel lp;
+    startPanel sp;
     private logicListPanel startPage;
     private MenuImgFile mif;
     private Player p;
@@ -25,7 +25,7 @@ public class MenuController {
     public MenuController(MainUi mu){
         ls=new LogicService();
         mif=new MenuImgFile();
-
+        this.mu=mu;
         //player 생성 및 초기화
         if (mu.p==null){
             String inputId;
@@ -42,8 +42,8 @@ public class MenuController {
 
         startPanel sp=new startPanel();
         sp.titleLabel.setIcon(mif.MainLogo);
-        setAction(sp);
         mu.add(sp.Panel);
+        setAction(sp);
     }
 
 
@@ -58,8 +58,10 @@ public class MenuController {
                 lp.Panel.setVisible(true);
                 lp.logoLabel.setIcon(mif.MenuLogo);
                 lp.backButton.setIcon(mif.back);
-                setAction(lp);
+                setAction(lp,sp);
                 mu.add(lp.Panel);
+                }else{
+                    lp.Panel.setVisible(true);
                 }
             }
         });
@@ -84,7 +86,7 @@ public class MenuController {
             }
         });
     }
-    public void setAction(LevelPanel lp){
+    public void setAction(LevelPanel lp,startPanel sp){
         lp.backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
