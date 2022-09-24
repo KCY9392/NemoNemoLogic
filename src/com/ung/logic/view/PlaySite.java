@@ -63,47 +63,7 @@ public class PlaySite extends JFrame {
         setSize(FrameWidth + 20, FrameHeight);
         getContentPane().setBounds(0, 0, FrameWidth + 10, FrameHeight);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		addWindowListener(new WindowListener() {
-//		//진행상황이 있는경우를 위한 경우	
-//		
-//			@Override
-//			public void windowClosed(WindowEvent e) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			@Override
-//			public void windowActivated(WindowEvent e) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			@Override
-//			public void windowOpened(WindowEvent e) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			@Override
-//	        public void windowClosing(WindowEvent e) {
-//	            if (JOptionPane.showConfirmDialog(, "Are you sure you want to quit?", "Confirm exit.", JOptionPane.OK_OPTION, 0, new ImageIcon("")) != 0) {
-//	                return;
-//	            }
-//	            System.exit(-1);
-//	        }
-//			@Override
-//			public void windowIconified(WindowEvent e) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			@Override
-//			public void windowDeiconified(WindowEvent e) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//			@Override
-//			public void windowDeactivated(WindowEvent e) {
-//				// TODO Auto-generated method stub
-//				
-//			}
-//		});
+
         if (p.getCurrentData() == null) {
             this.JBArr = makeJButtonArray();
         } else {
