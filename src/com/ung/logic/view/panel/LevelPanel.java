@@ -59,7 +59,7 @@ public class LevelPanel {
         backButton = new JButton();
         backButton.setBounds(734, 438, 125, 99);
         backButton.setBorderPainted(false);
-        backButton.setBackground(Color.WHITE);
+
 
 
 
@@ -67,7 +67,6 @@ public class LevelPanel {
         logoLabel = new JLabel();
         logoLabel.setBounds(146, 20, 580, 139);
         logoLabel.setHorizontalAlignment(SwingConstants.CENTER);
-
         Panel.add(logoLabel);
         Panel.add(EasyButton);
         Panel.add(backButton);
