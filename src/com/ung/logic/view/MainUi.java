@@ -21,6 +21,8 @@ public class MainUi extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MenuController mc=new MenuController(this);
-
     }
+
+
+
 }
