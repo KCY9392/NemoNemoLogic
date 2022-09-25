@@ -35,13 +35,13 @@ public class MenuController {
         this.mu=mu;
         //player 생성 및 초기화
         if (mu.p==null){
-            String inputId;
-            while(true) {
-                inputId = JOptionPane.showInputDialog("ID를 입력하세요");
-                if(inputId != null) {
-                    break;
-                }
-            }
+            String inputId="admin";
+//            while(true) {
+//                inputId = JOptionPane.showInputDialog("ID를 입력하세요");
+//                if(inputId != null) {
+//                    break;
+//                }
+//            }
             this.p=ls.getPlayer(inputId);
         }else{
             this.p=mu.p;
@@ -174,6 +174,7 @@ public class MenuController {
         current.nextButton.setIcon(mif.nextIcon);
         current.prevButton.setIcon(mif.prevIcon);
         current.BackButton.setIcon(mif.back);
+        System.out.println(page);
         current.nextButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

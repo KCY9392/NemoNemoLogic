@@ -12,13 +12,13 @@ public class MenuImgFile {
     public ImageIcon prevIcon;
 
     public MenuImgFile(){
-        this.MainLogo=resizeImg(200,200,new ImageIcon("resources\\image\\icon\\MainLogo.png"));
-        this.back=resizeImg(100,100,new ImageIcon("resources\\image\\icon\\back.png"));
-        this.MenuLogo=resizeImg(500,100,new ImageIcon("resources\\image\\icon\\levelLogo.png"));
-        this.unClearIcon=resizeImg(100,100,new ImageIcon("resources\\image\\icon\\unClear.png"));
-        this.clearIcon=resizeImg(100,100,new ImageIcon("resources\\image\\icon\\clear.png"));
-        this.nextIcon=resizeImg(100,100,new ImageIcon("resources\\image\\icon\\next.png"));
-        this.prevIcon=resizeImg(100,100,new ImageIcon("resources\\image\\icon\\prev.png"));
+        this.MainLogo=resizeImg(200,200,new ImageIcon("resources/image/icon/MainLogo.png"));
+        this.back=resizeImg(100,100,new ImageIcon("resources/image/icon/back.png"));
+        this.MenuLogo=resizeImg(500,100,new ImageIcon("resources/image/icon/levelLogo.png"));
+        this.unClearIcon=resizeImg(100,100,new ImageIcon("resources/image/icon/unClear.png"));
+        this.clearIcon=resizeImg(100,100,new ImageIcon("resources/image/icon/clear.png"));
+        this.nextIcon=resizeImg(100,100,new ImageIcon("resources/image/icon/next.png"));
+        this.prevIcon=resizeImg(100,100,new ImageIcon("resources/image/icon/prev.png"));
 
     }
     private static ImageIcon resizeImg(int width,int height,ImageIcon icon) { // image Size Setting

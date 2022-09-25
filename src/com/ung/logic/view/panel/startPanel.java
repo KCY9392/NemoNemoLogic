@@ -39,12 +39,7 @@ public class startPanel {
         continueButton.setBackground(Color.WHITE);
         continueButton.setBounds(333, 368, 192, 54);
         //갤러리 버튼
-        galleryButton = new JButton("갤러리");
-        galleryButton.setFont(new Font("굴림", Font.BOLD, 24));
-        galleryButton.setBackground(Color.WHITE);
-        galleryButton.setBounds(333, 453, 192, 54);
         Panel.add(continueButton);
-        Panel.add(galleryButton);
         Panel.add(gameStartButton);
         Panel.add(titleLabel);
 
