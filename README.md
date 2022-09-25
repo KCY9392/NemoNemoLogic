@@ -53,7 +53,7 @@
 2. 로그인 완료 후, MainMenu창을 실행합니다.
 <pre>
    -> Game Start 버튼 , 이어하기 버튼 , 갤러리 버튼
-   <br>   <img src="./resources/image/readme/MainMenu.png">
+   <br>   <img src="./resources/image/readme/MainMenu.png" style="width : 400px;  height : 300px;">
 </pre>
 <br><br><br>
 
