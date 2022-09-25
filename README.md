@@ -164,7 +164,8 @@
 <br>   <img src="resources/image/readme/QuestionInfo.png" style="height: 150px; width: 500px">
 </pre>
 <br>
-3.문제정보테이블 - Question.tb
+
+3. 문제정보테이블 - Question.tb
 <pre>
  PlaySiteFrame을 구성하는데 필요한 데이터들을 저장합니다.
  문제 당 용량이 커서 따로 분리해놨습니다.
