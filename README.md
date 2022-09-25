@@ -55,7 +55,7 @@
    -> Game Start 버튼 , 이어하기 버튼 , 갤러리 버튼
    <br>   <img src="./resources/image/readme/MainMenu.png" style="width : 400px;  height : 300px;">
 </pre>
-<br><br><br>
+<br>
 
 3. MainMenu 창에서 Game Start 버튼을 누르면,
 <pre>
@@ -64,7 +64,8 @@
    <br> - hard 선택 시, 문제정보 테이블에서 문제 id가 3000이상의 문제들을 전부 긁어와 페이지를 구성합니다.
    <br>   <img src="./resources/image/readme/levelSelect.png" style="width : 400px;  height : 300px;">
 </pre>
-<br><br><br>
+<br>
+
 4. level(easy/normal/hard) 중 하나를 선택하면, 문제 리스트가 나옵니다.
 <pre>
    - 첫 페이지일 경우, 이전버튼 (<-)을 비활성화하고,<br>
@@ -76,7 +77,7 @@
    - clear한 문제일 경우, clear 이미지로 나타납니다.
    <img src="./resources/image/readme/clearSuccess.png" style="width : 400px;  height : 300px;">
 </pre>
-<br><br><br>
+<br>
 
 5. 문제를 하나 선택하면, playsite가 나옵니다.
 <pre>
