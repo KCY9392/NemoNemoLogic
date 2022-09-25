@@ -9,7 +9,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 /**
- * http://nemonemologic.com 의 퀴즈 페이지 HTML을 파싱하여 <br/>
+ * http://nem*****c.com 의 퀴즈 페이지 HTML을 파싱하여 <br/>
  * 해당 페이지의 네모네모로직 퍼즐을 푸는 애플리케이션
  *  
  * @author 정태현
@@ -22,7 +22,7 @@ public class NemonemologicQuizParser {
 	public static void main(String[] args) throws Exception {
 		int[] QUIZ_CODE=new int[100];
 
-		String QUIZ_URL = "http://nemonemologic.com/play_logic.php?quid=";
+		String QUIZ_URL = ""
 		//랜덤한 페이지에서 문제 가저오기 - 진웅휘
 		for (int i = 0; i < QUIZ_CODE.length; i++) {
 			QUIZ_CODE[i]=(int)(Math.random()*16746)+1;
