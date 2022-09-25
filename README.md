@@ -2,7 +2,7 @@
 
 <br><br>
 
-<img src="resources/image/icon/levelLogo.png" style = "width : 750px; height : 150px;">
+<center><img src="resources/image/icon/levelLogo.png" style = "width : 750px; height : 150px;"></center>
 <h1><center>NemoNemoLogic</center></h1>
 
 <hr>
