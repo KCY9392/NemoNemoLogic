@@ -24,6 +24,9 @@ public class LevelPanel {
         Panel.setLayout(null);
         Panel.setVisible(true);
 
+        logoLabel = new JLabel();
+        logoLabel.setBounds(200,100,500,100);
+
 
         //easy 버튼
         EasyButton = new JButton("EASY");

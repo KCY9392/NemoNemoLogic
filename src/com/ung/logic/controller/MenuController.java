@@ -143,7 +143,10 @@ public class MenuController {
         checkClear(QIArr);
         for (int i = 0; i < QIArr.length; i++) {
             buttonArray[i]=new JButton();
-            nameLabel[i]=new JLabel(QIArr[i].getQName());
+            System.out.println(QIArr[i]);
+            String qn = new String(QIArr[i].getQName()+"");
+            nameLabel[i] = new JLabel();
+            nameLabel[i].setText(qn);
             sizeLabel[i]=new JLabel(QIArr[i].getSize());
             if(QIArr[i].isClear()){
                 buttonArray[i].setIcon(mif.clearIcon);

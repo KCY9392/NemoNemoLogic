@@ -3,6 +3,7 @@ package com.ung.logic.model.dao;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -238,8 +239,21 @@ public class LogicDAO {
 	private QuestionInfo resultToQuestionInfo(ResultSet rset) throws SQLException {
 		QuestionInfo QI = null;
 		if (rset.next()) {
-			QI = new QuestionInfo(rset.getInt("QST_ID"), rset.getString("QST_Name"), rset.getString("QST_SIZE"),
-					rset.getString("QST_LEVER"));
+			String qName="";
+
+
+			byte[] bytearray = rset.getString("QST_Name").getBytes();
+
+			try {
+				qName = new String(bytearray, "MS949");
+			} catch (UnsupportedEncodingException e) {
+				throw new RuntimeException(e);
+			}
+
+			System.out.println(qName);
+
+			QI = new QuestionInfo(rset.getInt("QST_ID"), qName, rset.getString("QST_SIZE"), rset.getString("QST_LEVER")
+					);
 		}
 		return QI;
 	}
