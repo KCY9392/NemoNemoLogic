@@ -101,10 +101,12 @@
 ### 3. DB 구성
    Qestion_Data.sql파일에 테이블 정보를 저장해두었습니다.
    
-   1. 사용자테이블(Player)
+   1. 사용자테이블Player.tb
 <pre>
-    용도: 사용자의 아이디 별로, 클리어 기록, 진행중인 게임 번호, 진행중인 게임 진행상황을 저장하는 테이블이다
-    로그인시 사용자를 가저오고 게임 클리어나 게임종료시 진행상황이나 클리어기록을 갱신하도록 설계되어있다.
+ 용도 : 사용자의 아이디마다 (클리어 기록, 진행중인 게임 번호, 진행중인 게임 진행상황)을 저장하는 테이블입니다.
+    
+ - 로그인 시, 사용자의 정보를 가져오고, 
+ - 게임 clear / 게임 종료 시, 진행상황이나 클리어기록을 갱신하도록 설계되어있습니다.
    <table>
    <tr>
       <td>PLAYER_CODE</td>
@@ -125,16 +127,20 @@
      </table>
    <img src="resources/image/readme/PlayerTable.png" style="height: 150px; width: 500px">
 </pre>
-   2. 문제목록테이블(QuestionInfo)
+   <br>
+
+2. 문제목록테이블 - QuestionInfo.tb
 <pre>
- 용도 : 난이도별 문제 선택에서 필요한건 문제에 대한 설명이고 문제에서 필요한건 해당문제의 가로 세로 힌트와 정답이기 때문에
- QUESTIONINFO TABLE과 QUESTION TABLE을 분리시킨다.
- 난이도별 목차를 구성하거나 클리어 목록을 구성하는데 쓰인다.
+ 용도 : 난이도 별 문제 선택에서 필요한 건 문제에 대한 정보이고, 
+        문제에서 필요한 정보는 해당 문제의 가로 세로 힌트와 정답 이기 때문에,
+        QUESTIONINFO TABLE 과 QUESTION TABLE 을 분리시킵니다.
+
+ - 난이도별 목차를 구성하거나 clear 목록을 구성하는데 사용됩니다.
 
  QST_ID : 문제 번호를 저장한다.<br>
  QST_NAME : 문제의 이름을 저장한다.<br>
  QST_SIZE:문제의 가로세로크기를 저장한다.<br>
- QST_LEVER:문제의 난이도를 저장한다.<br>
+ QST_LEVER:문제의 난이도를 저장한다.
 <table>
       <tr>
       <td>QST_ID</td>
@@ -155,19 +161,22 @@
          <td>NOMAL</td>
       </tr>
 </table>
-<img src="resources/image/readme/QuestionInfo.png" style="height: 150px; width: 500px">
+<br>   <img src="resources/image/readme/QuestionInfo.png" style="height: 150px; width: 500px">
 </pre>
-   
-   3.문제정보테이블(Question)<br>
+<br>
+3.문제정보테이블 - Question.tb
 <pre>
- PlaySiteFrame을 구성하는데 필요한 데이터들을 저장한다. 문제당 용량이 커서 따로 분리해 놨다.
- QST_CODE  : question info와 대칭되는 값이다. 정수로 저장되어있다.
- ROW_HINT : 가로행 문제정보를 열단위로 세미콜론(;)을 통해 나누고 행단위로는 ","로 나눈다.
- COLUMN_HINT :가로행 문제정보를 행단위로 세미콜론(;)을 통해 나누고 열단위로는 ","로 나눈다.
- ANSWER : 정답을 1 빈칸을 0으로 저장한다. 행은 “,”단위로 구분한다.
- 문제코드의 시퀸스를 부여해  easy난이도는 1000시작 nomal난이도는 2000시작하도록 
- hard난이도는 3000시작 하도록 설정해 두었다
-<img src="resources/image/readme/QuestionTable.png" style="width : 400px;  height : 300px;">
+ PlaySiteFrame을 구성하는데 필요한 데이터들을 저장합니다.
+ 문제 당 용량이 커서 따로 분리해놨습니다.
+
+ - QST_CODE  : question info와 대칭되는 값, 정수로 저장되어있습니다.
+ - ROW_HINT : 가로행 문제정보를 열단위로 세미콜론(;)을 통해 나누고 행단위로는 ","로 구분합니다.
+ - COLUMN_HINT :가로행 문제정보를 행단위로 세미콜론(;)을 통해 나누고 열단위로는 ","로 구분합니다.
+ - ANSWER : 정답을 1 빈칸을 0으로 저장하고, 행은 “,”단위로 구분합니다.
+ 
+ 문제코드의 시퀸스를 부여하여서
+ -> easy난이도는 1000시작 / nomal난이도는 2000시작 / hard난이도는 3000시작 하도록 설정하였습니다.
+ <br>  <img src="resources/image/readme/QuestionTable.png" style="width : 400px;  height : 300px;">
 
 <table>
     <tr>
