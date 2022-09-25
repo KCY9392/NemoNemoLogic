@@ -71,10 +71,10 @@
    - 마지막 페이지일 경우, 다음버튼 (->)을 비활성화합니다.<br>
 
    - unclear한 문제일 경우, ? 이미지로 나타나고,
-   <img src="./resources/image/readme/GameSelect.png" style="width : 100px;  height : 100px;"><br>
+   <img src="./resources/image/readme/GameSelect.png" style="width : 400px;  height : 300px;"><br>
    
    - clear한 문제일 경우, clear 이미지로 나타납니다.
-   <img src="./resources/image/readme/clearSuccess.png" style="width : 100px;  height : 100px;">
+   <img src="./resources/image/readme/clearSuccess.png" style="width : 400px;  height : 300px;">
 </pre>
 <br><br><br>
 
