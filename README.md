@@ -93,7 +93,9 @@
    - 체크 : 정답인지 모호할때, 잠깐 적어두는 용
    <br>   <img src="./resources/image/readme/playSiteimg1.png">
    <br>
-   - playsite 칸을 누르면, 
+   - playsite에서 문제를 풀때, 칸을 누르면 색칠됩니다.
+   <img src="./resources/image/readme/playSiteimg3.png">
+   <br> 
    ! 3번 틀릴 경우, "다시하시겠습니까?"라고 물어보는 창이 나옵니다.
    <img src="./resources/image/readme/playSiteimg2.png">
 </pre>
