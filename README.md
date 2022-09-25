@@ -1,9 +1,6 @@
 
 
 <br><br>
-<style> 
-    img{ width : 400px;  height : 300px;}
-</style>
 
 <img src="resources/image/icon/levelLogo.png" style = "width : 750px; height : 150px;">
 <h1><center>NemoNemoLogic</center></h1>
@@ -49,7 +46,7 @@
    아이디 입력창이 MainMenu창 위로 나옵니다. 
    <br> - 입력된 아이디가 없으면, DB에 입력한 아이디 정보를 새로 생성하고,
    <br> - 입력된 아이디가 존재하면, 입력한 아이디의 정보를 내부적으로 호출합니다.
-   <br>   <img src="./resources/image/readme/Login.png">
+   <br>   <img src="./resources/image/readme/Login.png" style="width : 400px;  height : 300px;">
 </pre>
 <br>
 
@@ -65,7 +62,7 @@
    <br> - easy 선택 시, 문제정보 테이블에서 문제 id가 2000미만의 문제들을 전부 긁어와 페이지를 구성합니다.
    <br> - nomal 선택 시, 문제정보 테이블에서 문제 id가 2000~3000사이의 문제들을 전부 긁어와 페이지를 구성합니다.
    <br> - hard 선택 시, 문제정보 테이블에서 문제 id가 3000이상의 문제들을 전부 긁어와 페이지를 구성합니다.
-   <br>   <img src="./resources/image/readme/levelSelect.png">
+   <br>   <img src="./resources/image/readme/levelSelect.png" style="width : 400px;  height : 300px;">
 </pre>
 <br><br><br>
 4. level(easy/normal/hard) 중 하나를 선택하면, 문제 리스트가 나옵니다.
@@ -74,10 +71,10 @@
    - 마지막 페이지일 경우, 다음버튼 (->)을 비활성화합니다.<br>
 
    - unclear한 문제일 경우, ? 이미지로 나타나고,
-   <img src="./resources/image/readme/GameSelect.png"><br>
+   <img src="./resources/image/readme/GameSelect.png" style="width : 100px;  height : 100px;"><br>
    
    - clear한 문제일 경우, clear 이미지로 나타납니다.
-   <img src="./resources/image/readme/clearSuccess.png">
+   <img src="./resources/image/readme/clearSuccess.png" style="width : 100px;  height : 100px;">
 </pre>
 <br><br><br>
 
@@ -91,13 +88,13 @@
    - O : 정답을 확신하고 푸는 용
    - X : O한것을 취소하는 용
    - 체크 : 정답인지 모호할때, 잠깐 적어두는 용
-   <br>   <img src="./resources/image/readme/playSiteimg1.png">
+   <br>   <img src="./resources/image/readme/playSiteimg1.png" style="width : 400px;  height : 300px;">
    <br>
    - playsite에서 문제를 풀때, 칸을 누르면 색칠됩니다.
-   <img src="./resources/image/readme/playSiteimg3.png">
+   <img src="./resources/image/readme/playSiteimg3.png" style="width : 400px;  height : 300px;">
    <br> 
    ! 3번 틀릴 경우, "다시하시겠습니까?"라고 물어보는 창이 나옵니다.
-   <img src="./resources/image/readme/playSiteimg2.png">
+   <img src="./resources/image/readme/playSiteimg2.png" style="width : 400px;  height : 300px;">
 </pre>
 <hr><br>
 
@@ -109,14 +106,13 @@
     용도: 사용자의 아이디 별로, 클리어 기록, 진행중인 게임 번호, 진행중인 게임 진행상황을 저장하는 테이블이다
     로그인시 사용자를 가저오고 게임 클리어나 게임종료시 진행상황이나 클리어기록을 갱신하도록 설계되어있다.
    <table>
-   <thead><td>
-      PLAYER_CODE</td>
+   <tr>
+      <td>PLAYER_CODE</td>
       <td>PLAYER_ID</td>
       <td>CLEAR_LIST</td>
       <td>CURRENT_QST</td>
       <td>CURRENT_DATA</td>
-   </thead>
-   <tbody>
+   </tr>
       <tr>
       <td>21</td>
       <td>admin</td>
@@ -126,8 +122,7 @@
       </tr>
          <tr></tr>
       <tr></tr>
-   </tbody>
-   </table>
+     </table>
    <img src="resources/image/readme/PlayerTable.png" style="height: 150px; width: 500px">
 </pre>
    2. 문제목록테이블(QuestionInfo)
@@ -141,13 +136,12 @@
  QST_SIZE:문제의 가로세로크기를 저장한다.<br>
  QST_LEVER:문제의 난이도를 저장한다.<br>
 <table>
-   <thead>
+      <tr>
       <td>QST_ID</td>
       <td>QST_NAME</td>
       <td>QST_SIZE</td>
       <td>QST_LEVEL</td>
-   </thead>
-   <tbody>
+      </tr>
       <tr>
          <td>1001</td>
          <td>사과</td>
@@ -160,7 +154,6 @@
          <td>10*10</td>
          <td>NOMAL</td>
       </tr>
-   </tbody>
 </table>
 <img src="resources/image/readme/QuestionInfo.png" style="height: 150px; width: 500px">
 </pre>
@@ -174,16 +167,15 @@
  ANSWER : 정답을 1 빈칸을 0으로 저장한다. 행은 “,”단위로 구분한다.
  문제코드의 시퀸스를 부여해  easy난이도는 1000시작 nomal난이도는 2000시작하도록 
  hard난이도는 3000시작 하도록 설정해 두었다
-<img src="resources/image/readme/QuestionTable.png">
+<img src="resources/image/readme/QuestionTable.png" style="width : 400px;  height : 300px;">
 
 <table>
-   <thead>
+    <tr>
       <td>QST_CODE</td>
       <td>Row_Hint</td>
       <td>Column_Hint</td>
       <td>ANSWER</td>
-   </thead>
-   <tbody>
+   </tr>
       <tr>
          <td>2001 </td>
          <td>10,10;8,8;6,6;5.....  </td>
@@ -196,6 +188,6 @@
          <td>10,10;8,8;6,6;5,1,5.... </td>
          <td>11100000000001111111111,1....... </td>
       </tr>
-   </tbody>
+   
 </table>
       </pre>
