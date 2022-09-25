@@ -1,9 +1,10 @@
+
+
+<br><br>
 <style> 
     img{ width : 400px;  height : 300px;}
 </style>
 
-
-<br><br>
 <img src="resources/image/icon/levelLogo.png" style = "width : 750px; height : 150px;">
 <h1><center>NemoNemoLogic</center></h1>
 
